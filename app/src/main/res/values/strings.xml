@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="city">PONOROGO</string>
+    <string name="country">INDONESIA</string>
+    <string name="day_time">FRIDAY 10 AM</string>
+    <string name="degree">17 ̊C</string>
+    <string name="degree_minimum">12 ̊C</string>
+    <string name="humidity">HUMIDITY</string>
+    <string name="humidity_value">95%</string>
+    <string name="humidity_value_minimum">80%</string>
+    <string name="wind">WIND</string>
+    <string name="wind_value">3 Km/ hr</string>
+    <string name="wind_value_maximum">5 Km/ hr</string>
+    <string name="real_feel">REAL FEEL</string>
+    <string name="real_feel_value">19 ̊C</string>
+    <string name="real_feel_value_minimum">10 ̊C</string>
+    <string name="night_time">FRIDAY 10 PM</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".NightActivity">
+
+    <TextView
+        android:id="@+id/city"
+        style="@style/CityTitle"
+        android:text="@string/city"
+        android:textColor="@color/colorTextTwo" />
+
+    <TextView
+        android:id="@+id/country"
+        style="@style/CountryTitle"
+        android:layout_below="@id/city"
+        android:text="@string/country"
+        android:textColor="@color/colorTextTwo" />
+
+    <TextView
+        android:id="@+id/night_time"
+        style="@style/TimeTitle"
+        android:layout_below="@id/country"
+        android:text="@string/night_time"
+        android:textColor="@color/colorTextTwo" />
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/WeatherImage"
+        android:layout_below="@id/night_time"
+        android:src="@drawable/night" />
+
+    <TextView
+        android:id="@+id/degree"
+        style="@style/DegreeTitle"
+        android:layout_below="@id/image"
+        android:text="@string/degree_minimum"
+        android:textColor="@color/colorTextTwo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/degree"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout style="@style/LinearStyle">
+
+            <TextView
+                style="@style/Condition"
+                android:text="@string/humidity"
+                android:textColor="@color/colorTextTwo" />
+
+            <TextView
+                style="@style/Condition.Value"
+                android:text="@string/humidity_value_minimum"
+                android:textColor="@color/colorTextTwo" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearStyle">
+
+            <TextView
+                style="@style/Condition"
+                android:text="@string/wind"
+                android:textColor="@color/colorTextTwo" />
+
+            <TextView
+                style="@style/Condition.Value"
+                android:text="@string/wind_value_maximum"
+                android:textColor="@color/colorTextTwo" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearStyle">
+
+            <TextView
+                style="@style/Condition"
+                android:text="@string/real_feel"
+                android:textColor="@color/colorTextTwo" />
+
+            <TextView
+                style="@style/Condition.Value"
+                android:text="@string/real_feel_value_minimum"
+                android:textColor="@color/colorTextTwo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
